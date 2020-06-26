@@ -89,8 +89,7 @@ p {
   padding-bottom: 40px;
 }
 
-#classics p,
-h2 {
+#classics p {
   width: 500px;
   position: inline-block;
   text-align: left;
