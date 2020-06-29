@@ -6,7 +6,7 @@
 }
 
 p {
-  font-size: 17px;
+  font-size: 22px;
   font-family: "Lucida Console", Monaco, monospace:
 }
 
@@ -16,12 +16,46 @@ h2 {
 }
 
 nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
 
+nav li {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+nav li:hover {
+  background-color: grey;
 }
 
 #banner {
+  position: relative;
+  top: 300px;
   width: 100%;
-  height: auto;
+  height: 600px;
   align-content: center;
   text-align: center;
 }
@@ -38,15 +72,20 @@ nav {
 
 #about p {
   float: left;
+  left: 8px;
+}
+
+#about h2 {
+  position: relative;
+  top: 14px;
+  left: 8px;
 }
 
 #classics h2 {
   float: right;
   position: relative;
   bottom: 200px;
-  padding: 10px;
   right: 6px;
-
 }
 
 #classics p {
